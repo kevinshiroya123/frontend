@@ -1,0 +1,41 @@
+/* Theme Variables */
+:root {
+    /* Colors */
+    --primary-color: #d32f2f;
+    --primary-hover-color: #b71c1c;
+    --secondary-color: #333;
+    --secondary-hover-color: #555;
+    --background-color: #f9f4f2;
+    --white-color: #fff;
+    --light-gray-color: #ddd;
+    --dark-gray-color: #777;
+    --border-color: #ccc;
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+  
+    /* Fonts */
+    --primary-font: 'Arial', sans-serif;
+    --font-size-large: 2.5rem;
+    --font-size-medium: 1.5rem;
+    --font-size-small: 1rem;
+    --font-size-xs: 0.9rem;
+  
+    /* Spacing */
+    --section-padding: 50px;
+    --container-width: 80%;
+    --container-max-width: 1200px;
+    --gap-small: 10px;
+    --gap-medium: 15px;
+    --gap-large: 20px;
+    --gap-extra-small: 5px; /* New variable for finer spacing */
+  
+    /* Buttons */
+    --button-border-radius: 25px;
+    --button-padding: 10px 20px;
+  
+    /* Box Shadows */
+    --box-shadow:-20px 20px 20px var(--box-shadow-color);
+   
+
+    --menu-container-width: 250px; /* New variable for menu container width */
+  }
+  

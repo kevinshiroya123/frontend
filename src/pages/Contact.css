@@ -1,0 +1,115 @@
+.contact-section {
+  background-color: var(--background-color); /* Theme background color */
+  padding: var(--section-padding); /* Theme section padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-large); /* Theme spacing */
+  min-height: 100vh; /* Full height view */
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-small); /* Theme spacing */
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color); /* Theme primary color */
+  border-radius: var(--gap-extra-small); /* Theme radius */
+}
+
+.contact-title {
+  font-size: var(--font-size-large); /* Theme font size */
+  color: var(--secondary-color); /* Theme text color */
+  font-family: var(--primary-font); /* Theme font */
+  font-weight: bold;
+}
+
+.contact-form {
+  background-color: var(--white-color); /* Theme background color */
+  padding: var(--gap-large); /* Theme spacing */
+  border-radius: var(--button-border-radius); /* Theme radius */
+  box-shadow: var(--box-shadow); /* Theme box shadow */
+  max-width: var(--container-max-width); /* Theme max container width */
+  width: 70vw;
+  margin: var(--gap-medium) auto; /* Center form and spacing */
+}
+
+.form-row {
+  display: flex;
+  gap: var(--gap-large); /* Theme spacing */
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small); /* Theme spacing */
+  width: 100%;
+  margin-bottom: var(--gap-medium); /* Theme spacing */
+}
+
+.form-group label {
+  font-size: var(--font-size-xs); /* Theme font size */
+  color: var(--dark-gray-color); /* Theme text color */
+  text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  border-bottom: 2px solid var(--secondary-color); /* Theme border color */
+  outline: none;
+  padding: var(--gap-extra-small) var(--gap-small); /* Theme spacing */
+  font-size: var(--font-size-small); /* Theme font size */
+  color: var(--secondary-color); /* Theme text color */
+  width: 100%;
+  font-family: var(--primary-font); /* Theme font */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 2px solid var(--primary-color); /* Theme focus color */
+}
+
+textarea {
+  resize: none;
+}
+
+.send-button {
+  background-color: var(--primary-color); /* Theme primary color */
+  color: var(--white-color); /* Theme text color */
+  padding: var(--button-padding); /* Theme button padding */
+  border: none;
+  border-radius: var(--button-border-radius); /* Theme radius */
+  font-size: var(--font-size-small); /* Theme font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: var(--gap-medium); /* Theme spacing */
+}
+
+.send-button:hover {
+  background-color: var(--primary-hover-color); /* Theme hover color */
+}
+
+/* Adjust gap for large screens */
+@media (min-width: 769px) {
+  .form-row {
+    gap: 50px; /* Larger gap for desktop */
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column; /* Stack inputs vertically */
+    gap: var(--gap-small); /* Reduce gap */
+  }
+
+  .contact-form {
+    width: 50vw; /* Adjust width for smaller screens */
+  }
+}

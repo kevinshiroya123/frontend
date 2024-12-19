@@ -1,0 +1,124 @@
+/* Project Section Styling */
+.project-section {
+  background-color: var(--background-color); /* Using theme variable */
+  padding: var(--section-padding);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-large); /* Using theme variable */
+  min-height: 100vh; /* Full height view */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Header Styling */
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-small); /* Using theme variable */
+}
+
+.project-icon {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color); /* Using theme variable */
+  border-radius: 3px;
+}
+
+.project-title {
+  font-size: var(--font-size-large); /* Using theme variable */
+  color: var(--secondary-color); /* Using theme variable */
+  font-family: var(--primary-font); /* Using theme variable */
+  font-weight: bold;
+}
+
+/* Description Styling */
+.project-description {
+  max-width: 800px;
+  font-size: var(--font-size-small); /* Using theme variable */
+  color: var(--dark-gray-color); /* Using theme variable */
+  line-height: 1.8;
+  font-family: var(--primary-font); /* Using theme variable */
+}
+
+/* Project Card Styling */
+.project-card {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-large); /* Using theme variable */
+  background-color: var(--white-color); /* Using theme variable */
+  border-radius: var(--gap-medium); /* Using theme variable for rounded corners */
+  box-shadow: var(--box-shadow); /* Using theme variable */
+  padding: var(--gap-large); /* Using theme variable */
+  max-width: var(--container-max-width); /* Using theme variable */
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Left Side - Text */
+.project-text {
+  flex: 1;
+  text-align: left;
+  font-family: var(--primary-font); /* Using theme variable */
+  color: var(--secondary-color); /* Using theme variable */
+}
+
+.project-text h2 {
+  font-size: var(--font-size-medium); /* Using theme variable */
+  margin-bottom: var(--gap-small); /* Using theme variable */
+  font-weight: bold;
+  position: relative;
+}
+
+.project-text h2::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: var(--primary-color); /* Using theme variable */
+  position: absolute;
+  left: -20px;
+  top: 0;
+}
+
+.project-text h3 {
+  font-size: var(--font-size-small); /* Using theme variable */
+  color: var(--light-gray-color); /* Using theme variable */
+  margin-bottom: var(--gap-small); /* Using theme variable */
+}
+
+.project-text p {
+  font-size: var(--font-size-small); /* Using theme variable */
+  line-height: 1.6;
+  color: var(--dark-gray-color); /* Using theme variable */
+}
+
+/* Right Side - Image */
+.project-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--gap-small); /* Using theme variable for rounded corners */
+  box-shadow: var(--box-shadow); /* Using theme variable */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column; /* Stack text and image vertically */
+  }
+
+  .project-text {
+    text-align: center;
+  }
+
+  .project-image img {
+    max-width: 80%; /* Reduce image size for smaller screens */
+  }
+}

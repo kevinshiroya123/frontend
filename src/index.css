@@ -1,0 +1,74 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/* General Reset and Debugging */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding/border in width calculation */
+  /* Debugging Outline: Uncomment for debugging overflow issues */
+  /* outline: 1px solid red; */
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  font-family: var(--primary-font); /* Theme font */
+  background-color: var(--background-color); /* Theme background */
+  color: var(--secondary-color); /* Theme text color */
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--gap-medium) var(--gap-large); /* Theme spacing */
+  background-color: var(--white-color); /* Theme background color */
+  align-items: center;
+  border-bottom: 1px solid var(--border-color); /* Theme border color */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: var(--gap-medium); /* Theme spacing */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--secondary-color); /* Theme link color */
+  font-size: var(--font-size-small); /* Theme font size */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color); /* Theme hover color */
+}
+
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--section-padding); /* Theme section padding */
+  background-color: var(--white-color); /* Theme background color */
+  box-shadow: var(--box-shadow-hero); /* Theme box shadow */
+}
+
+/* Footer Styling */
+.footer {
+  padding: var(--gap-large); /* Theme spacing */
+  background-color: var(--white-color); /* Theme background color */
+  color: var(--dark-gray-color); /* Theme text color */
+  border-top: 1px solid var(--border-color); /* Theme border color */
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--secondary-color); /* Theme link color */
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: var(--primary-color); /* Theme hover color */
+}
